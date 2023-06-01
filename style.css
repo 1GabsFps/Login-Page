@@ -159,11 +159,13 @@ header{
     pointer-events: none;
     transition: .5s;
 }
-.inputbox input:focus~label{
-top: -5px;
-}
+.inputbox input:focus~label,
+.inputbox input:invalid~label,
 .inputbox input:valid~label{
     top: -5px;
+}
+
+.inputbox input:invalid~label{
 }
 .inputbox input {
     width: 100%;
